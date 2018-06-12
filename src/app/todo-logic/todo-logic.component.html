@@ -1,0 +1,9 @@
+<app-input-todo
+  (onTodoAdd)="onTodoAdd($event)">
+</app-input-todo>
+
+<app-todo-list
+  [todoTasks]="todoTasks"
+  (deleteTaskClick)="deleteTaskClick($event)"
+  (transferNewTodoStatus)="todoNewStatusChange($event)">
+</app-todo-list>

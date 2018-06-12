@@ -1,0 +1,17 @@
+.data{
+  width: 70%;
+  float: left;
+  word-break: break-all;
+}
+button{
+  margin-left: 10%;
+  width: 20%;
+  float: left;
+}
+.todo{
+  background-color: aqua;
+}
+.done{
+  background-color: rgba(30,8,0,0.4)
+}
+

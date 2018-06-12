@@ -1,0 +1,9 @@
+input{
+  width: 70%;
+  float: left;
+}
+button{
+  margin-left: 10%;
+  width: 20%;
+  float: left;
+}
