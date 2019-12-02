@@ -1,17 +1,17 @@
 .data{
-  width: 70%;
+  width: 80%;
   float: left;
   word-break: break-all;
 }
 button{
-  margin-left: 10%;
-  width: 20%;
-  float: left;
+  margin-left: 1%;
+  width: 8%;
+  float: right;
 }
 .todo{
-  background-color: aqua;
+  background-color: #D6EAF8;
 }
 .done{
-  background-color: rgba(30,8,0,0.4)
+  background-color: #5499C7;
 }
 

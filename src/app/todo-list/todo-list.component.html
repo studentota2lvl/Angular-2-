@@ -1,19 +1,20 @@
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <hr>
-      <ul class="list-group">
-        <li appToggleTodo
-          *ngFor="let task of todoTasks"
-          class="{{task.status}} list-group-item"
-          (toggleTask)="toggleTaskChangeStatusTransfer($event)">
-            <p class="data">{{task.data}}</p>
-            <p hidden="true" class="id">{{task.id}}</p>
-            <button
-              class="btn btn-primary"
-              (click)="onDelBtnClick(task)">del</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+<hr>
+<ul class="list-group">
+  <li appToggleTodo
+    *ngFor="let task of todoTasks"
+    class="{{task.status}} list-group-item"
+    (toggleTask)="toggleTaskChangeStatusTransfer($event)">
+      <p class="data">{{task.data}}</p>
+      <p hidden="true" class="id">{{task.id}}</p>
+    <button
+      class="btn btn-primary"
+      (click)="onDelBtnClick(task)">
+      del
+    </button>
+    <button
+      class="btn btn-primary"
+      (click)="onEditBtnClick($event)">
+      edit
+    </button>
+  </li>
+</ul>

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-input-todo',
@@ -8,6 +8,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class InputTodoComponent implements OnInit {
 
   @Output() onTodoAdd = new EventEmitter();
+  // @Input() taskVal;
   taskVal: string;
 
   constructor() { }
@@ -19,5 +20,4 @@ export class InputTodoComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

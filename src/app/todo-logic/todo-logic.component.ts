@@ -15,6 +15,12 @@ export class TodoLogicComponent implements OnInit {
 
   constructor(private todoService: TodoService) { }
 
+  // editTaskClick(task) {
+  //
+  //   // this.todoService.editTaskData(id);
+  //   // this.renderList();
+  // }
+
   onTodoAdd(taskVal: string) {
     this.todoService.createNewTaskObj(taskVal);
     this.renderList();

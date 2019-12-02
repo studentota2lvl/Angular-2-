@@ -44,9 +44,20 @@ export class TodoService {
   }
 
   changeTaskStatus(task) {
-    if(task.status === this.taskStatus[0]) {
+    if (task.status === this.taskStatus[0]) {
       task.status = this.taskStatus[1];
     } else {task.status = this.taskStatus[0]}
     this.addTask(task);
   }
+
+  // editTaskData(id: string, newTaskData: string) {
+  //   this.changeTaskData(this.findTaskFromId(id), newTaskData);
+  // }
+  //
+  // changeTaskData(task, newTaskData) {
+  //   if (task.data === newTaskData) {
+  //     return;
+  //   } else {task.data = newTaskData}
+  //   this.addTask(task);
+  // }
 }

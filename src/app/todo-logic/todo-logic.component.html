@@ -1,9 +1,17 @@
-<app-input-todo
-  (onTodoAdd)="onTodoAdd($event)">
-</app-input-todo>
-
-<app-todo-list
-  [todoTasks]="todoTasks"
-  (deleteTaskClick)="deleteTaskClick($event)"
-  (transferNewTodoStatus)="todoNewStatusChange($event)">
-</app-todo-list>
+<div class="container">
+  <div class="row">
+    <div class="col-10">
+      <app-input-todo
+        (onTodoAdd)="onTodoAdd($event)">
+      </app-input-todo>
+    </div>
+    <div class="col-10">
+      <app-todo-list
+        [todoTasks]="todoTasks"
+        (editTaskClick)="editTaskClick($event)"
+        (deleteTaskClick)="deleteTaskClick($event)"
+        (transferNewTodoStatus)="todoNewStatusChange($event)">
+      </app-todo-list>
+    </div>
+  </div>
+</div>
