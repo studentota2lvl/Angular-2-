@@ -8,7 +8,6 @@
     <div class="col-10">
       <app-todo-list
         [todoTasks]="todoTasks"
-        (editTaskClick)="editTaskClick($event)"
         (deleteTaskClick)="deleteTaskClick($event)"
         (transferNewTodoStatus)="todoNewStatusChange($event)">
       </app-todo-list>
