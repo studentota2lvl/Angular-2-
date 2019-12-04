@@ -16,3 +16,9 @@
   overflow:auto;
   margin-left: 15%;
 }
+
+.hostname {
+  color: blanchedalmond;
+  position: absolute;
+  right: 20px;
+}
