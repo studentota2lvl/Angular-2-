@@ -7,5 +7,5 @@ import {Component, Inject, OnInit} from '@angular/core';
 })
 export class AppComponent{
   title = 'app';
-  hostname = window.location.hostname;
+  hostname = window.location.hostname + ':' + window.location.port;
 }
